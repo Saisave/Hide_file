@@ -12,5 +12,5 @@ side note: you may have noticed the activation code thing well ignore that and t
 -Activation code-
 "a6d3p90g6hide456yt", "t9kl56rtx5g7file89hg7rtyup", "guxp85gh52gvhf256fvh"
 
-Tip
-right click in the text box to choose file
+Tip -
+[right click in the text box to choose file]
