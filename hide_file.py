@@ -6,32 +6,24 @@ from tkinter import messagebox
 from tkinter.filedialog import askopenfile
 
 
-pre_root = Tk()
 
-pre_root.overrideredirect(True)
-pre_root.configure(bg="#ac97d1")
 
 app_width = 350
 app_height = 165
 
-screen_width = pre_root.winfo_screenwidth()
-screen_height = pre_root.winfo_screenheight()
 
-x = (screen_width / 2) - (app_width / 2)
-y= (screen_height / 2) - (app_height / 2)
 
-pre_root.geometry(f'{app_width}x{app_height}+{int(x)}+{int(y)}')
 
-space1 = Label(pre_root, text="                                                                                                          ", bg="#ac97d1").grid(row=0, column=0)
 
-exit = Button(pre_root, text="❌", bg="#ac97d1", command= lambda: pre_root.destroy())
-exit.grid(row=0, column=1)
 
-title = Label(pre_root, text="Activation code", font=('Arial', 15), bg="#ac97d1").grid(row=1, column=0)
+
+
+
+
 
 
 def newone():
-    pre_root.destroy()
+    
     root = Tk()
 
     root.title("HIDE FILE")
@@ -134,8 +126,8 @@ activation_codes = ["a6d3p90g6hide456yt", "t9kl56rtx5g7file89hg7rtyup", "guxp85g
 current_code = random.choice(activation_codes)
 print(current_code)
 
-box = Entry(pre_root, width=40)
-box.grid(row=2, column=0)
+newone()
+
 
 def checkcode():
     if box.get() == current_code:
@@ -144,9 +136,4 @@ def checkcode():
     else:
         messagebox.showerror("code E", "The Activation code is incorrect")
 
-conf = Button(pre_root, text="Enter", bg="blue", fg="white", width=10, command= checkcode)
-conf.grid(row=3, column=0, pady=20)
 
-#open_up = Button(pre_root, text="open", command= ).pack()
-
-pre_root.mainloop()
